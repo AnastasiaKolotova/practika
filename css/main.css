@@ -1,0 +1,44 @@
+header {
+    background: #cbf3a7;
+}
+
+body {
+    background-color: #f2f2f2;
+    font-size: 16px;
+    color: black;
+
+    -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
+
+    /*margin: 70px;*/
+}
+
+h1, h2 {
+    font-color: blue;
+}
+
+p {
+    line-height: 28px;
+    margin-bottom: 25px;
+}
+/* opisanie ssylok */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    margin: 1em 0;
+    padding: 0;
+}
+
+.footer {
+    background: #75b5a7;
+    text-align: center;
+}
+
+.navbar {
+    font-weight: 800;
+    font-size: 14px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
