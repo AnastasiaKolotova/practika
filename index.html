@@ -19,7 +19,7 @@
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html"><img src="image/logo.png" class="w-50" alt="logo"></a>
-            <a class="navbar-brand logo" href="index.html"><b>GET PET BACK</b></a>
+            <a class="navbar-brand" href="index.html"><b class="logo">GET <b class="logo2">PET</b> BACK</b></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -40,8 +40,8 @@
                     </li>
                 </ul>
                 <div class="d-flex">
-                    <button class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#exampleModal">Войти</button>
-                    <button class="btn btn-outline-danger">Выйти</button>
+                    <button class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#signinModal">Войти</button>
+                    <button class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#signupModal">Регистрация</button>
                 </div>
                 <form class="d-flex">
                     <input class="form-control me-2" type="search" placeholder="Поиск на сайте..." aria-label="Search">
@@ -52,12 +52,12 @@
     </nav>
 </header>
 
-<!-- Modal window -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<!-- Modal window 1 -->
+<div class="modal fade" id="signinModal" tabindex="-1" aria-labelledby="signinModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Вход</h5>
+                <h5 class="modal-title" id="signinModalLabel">Вход</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
@@ -77,17 +77,47 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Вернуться</button>
-                <button type="button" class="btn btn-primary">Войти</button>
+                <button type="button" class="btn btn-success">Войти</button>
             </div>
         </div>
     </div>
 </div>
 
+<!-- Modal window 2
+<div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Регистрация</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail2" class="form-label">Адрес электронной почты</label>
+                        <input type="email" class="form-control" id="exampleInputEmail2" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">Мы никогда не распространяем Ваши e-mail другим людям.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Пароль</label>
+                        <input type="password" class="form-control" id="exampleInputPassword2">
+                        <input type="checkbox" id="gridCheck" class="form-check-input">
+                        <label for="gridCheck" class="form-check-label">Сохранить пароль</label>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Вернуться</button>
+                <button type="button" class="btn btn-primary">Войти</button>
+            </div>
+        </div>
+    </div>
+</div>-->
+
 <main style="min-height: 70vh;">
     <h2 class="text-center text-black my-2">Найденные животные</h2>
     <!-- Slider -->
-    <div id="carouselExampleIndicators" class="carousel slide m-auto p-2" data-bs-ride="carousel"
-         style="min-height: 400px; background: #b0d89e;">
+    <div id="carouselExampleIndicators" class="carousel slide slider" data-bs-ride="carousel">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -121,54 +151,54 @@
     </div>
 
     <h2 class="text-center text-black my-2">Карточки найденных животных</h2>
-    <div class="d-flex flex-row flex-wrap">
-        <div class="d-flex flex-row flex-wrap border m-3 p-3" style="min-width: 300px; width: 45%; background: #b0d89e;">
+    <div class="cards">
+        <div class="card1">
             <img src="image/pets/кошка.jpg" class="w-75" alt="рисунок животного">
-            <p class="w-50 text-primary" style="min-width: 250px;">id:</p>
+            <p class="titles_card">id:</p>
             <p class="w-50" style="min-width: 250px;">14</p>
 
-            <p class="w-50 text-primary" style="min-width: 250px;">Вид животного:</p>
+            <p class="titles_card">Вид животного:</p>
             <p class="w-50" style="min-width: 250px;">Кошка</p>
 
-            <p class="w-50 text-primary" style="min-width: 300px;">Описание:</p>
+            <p class="titles_card">Описание:</p>
             <p class="w-50" style="min-width: 300px;">Потерялась кошка, пушистая, серая. Любит играть, ласковая.</p>
 
-            <p class="w-50 text-primary" style="min-width: 300px;">Номер чипа:</p>
+            <p class="titles_card">Номер чипа:</p>
             <p class="w-50" style="min-width: 300px;">ca-001-spb</p>
 
-            <p class="w-50 text-primary" style="min-width: 300px;">Район:</p>
+            <p class="titles_card">Район:</p>
             <p class="w-50" style="min-width: 300px;">Василеостровский</p>
 
-            <p class="w-50 text-primary" style="min-width: 300px;">Дата:</p>
+            <p class="titles_card">Дата:</p>
             <p class="w-50" style="min-width: 300px;">24-03-2020</p>
         </div>
-        <div class="d-flex flex-row flex-wrap border m-3 p-3" style="min-width: 300px; width: 45%; background: #b0d89e;">
+        <div class="card1">
             <img src="image/pets/коза.jpeg" class="w-75" alt="рисунок животного">
-            <p class="w-50 text-primary" style="min-width: 250px;">id:</p>
+            <p class="titles_card">id:</p>
             <p class="w-50" style="min-width: 250px;">18</p>
 
-            <p class="w-50 text-primary" style="min-width: 250px;">Вид животного:</p>
+            <p class="titles_card">Вид животного:</p>
             <p class="w-50" style="min-width: 250px;">Коза</p>
 
-            <p class="w-50 text-primary" style="min-width: 300px;">Описание:</p>
+            <p class="titles_card">Описание:</p>
             <p class="w-50" style="min-width: 300px;">Потерялась коза. Последний раз видели в здании Московского вокзала
                 г. Санкт-Петербург. Коза белая, пуховая.</p>
 
-            <p class="w-50 text-primary" style="min-width: 300px;">Номер чипа:</p>
+            <p class="titles_card">Номер чипа:</p>
             <p class="w-50" style="min-width: 300px;">go-011-spb</p>
 
-            <p class="w-50 text-primary" style="min-width: 300px;">Район:</p>
+            <p class="titles_card">Район:</p>
             <p class="w-50" style="min-width: 300px;">Центральный</p>
 
-            <p class="w-50 text-primary" style="min-width: 300px;">Дата:</p>
+            <p class="titles_card">Дата:</p>
             <p class="w-50" style="min-width: 300px;">14-03-2022</p>
         </div>
     </div>
 </main>
 
-<footer class="border-bottom footer">
-    <p class="text-white p-3">GET PET BACK © Copyright, 2022</p>
-    <p class="text-white p-3">Все права защищены</p>
+<footer class="border-bottom">
+    <p class="text-white">GET PET BACK © Copyright, 2022</p>
+    <p class="text-white">Все права защищены</p>
 </footer>
 
 <!-- Bootstrap в связке с Popper -->

@@ -1,9 +1,19 @@
 header {
-    background: #cbf3a7;
+    background: white;
+    color: #6b4040;
+}
+
+.logo {
+    color: #6b4040;
+}
+
+.logo2 {
+    color: #add430;
 }
 
 body {
     background-color: #f2f2f2;
+    /*font-family: "Arial";*/
     font-size: 16px;
     color: black;
 
@@ -11,10 +21,13 @@ body {
     -webkit-overflow-scrolling: touch;
 
     /*margin: 70px;*/
+
+    padding: 0;
+    margin: 0 auto;
 }
 
 h1, h2 {
-    font-color: blue;
+    color: #add430;
 }
 
 p {
@@ -31,8 +44,8 @@ hr {
     padding: 0;
 }
 
-.footer {
-    background: #75b5a7;
+footer {
+    background: #bb906a /*#add430*/;
     text-align: center;
 }
 
@@ -41,4 +54,46 @@ hr {
     font-size: 14px;
     padding-top: 15px;
     padding-bottom: 15px;
+}
+
+.slider {
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    /*box-shadow: 0 0px 5px 0px rgba(0, 0, 0, 0.19)*/;
+}
+
+.cards {
+
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    /*padding-right: 40px;
+    padding-top: 0;
+    padding-bottom: 0;*/
+
+}
+
+.card1 {
+    margin-bottom: 20px;
+    background-color: white;
+    border-radius: 10px;
+    width: 45%;
+
+   /* box-shadow: 0 0px 5px 0px rgba(0, 0, 0, 0.19);*/
+    transition: 0.3s all;
+}
+
+.titles_card {
+    color: green;
+    min-width: 250px;
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+div {
+    display: block;
 }
