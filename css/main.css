@@ -45,7 +45,7 @@ hr {
 }
 
 footer {
-    background: #bb906a /*#add430*/;
+    background: #bb906a;
     text-align: center;
 }
 
@@ -59,29 +59,50 @@ footer {
 .slider {
     background-color: white;
     padding: 10px;
-    border-radius: 10px;
-    /*box-shadow: 0 0px 5px 0px rgba(0, 0, 0, 0.19)*/;
+    width: 70%;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .cards {
 
+    /* 1 version
     display: flex;
     flex-wrap: wrap;
     padding: 20px;
-    /*padding-right: 40px;
+    padding-right: 40px;
     padding-top: 0;
-    padding-bottom: 0;*/
+    padding-bottom: 0;
+    */
+
+
+
 
 }
 
 .card1 {
-    margin-bottom: 20px;
+    /*margin-bottom: 20px;
     background-color: white;
     border-radius: 10px;
     width: 45%;
 
-   /* box-shadow: 0 0px 5px 0px rgba(0, 0, 0, 0.19);*/
-    transition: 0.3s all;
+    box-shadow: 0 0px 5px 0px rgba(0, 0, 0, 0.19);
+    transition: 0.3s all;*/
+
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    min-width: 300px;
+    width: 20%;
+    margin: auto;
+    padding: 10px;
+    text-align: left;
+    font-family: sans-serif;
+
+}
+
+.img_card {
+    width: 100%;
 }
 
 .titles_card {
@@ -92,8 +113,34 @@ footer {
 
 * {
     box-sizing: border-box;
+
+    padding: 0;
+    margin: 0;
 }
 
 div {
     display: block;
 }
+
+main {
+    /*display: flex;
+    flex-direction: column;*/
+
+    display: block;
+}
+
+img {
+    border-radius: 5px 5px 0 0;
+}
+
+.button {
+    background-color: green;
+    color: white;
+}
+
+.title {
+    background-color: #6b4040;
+    color: #f2f2f2;
+    padding: 10px;
+}
+
