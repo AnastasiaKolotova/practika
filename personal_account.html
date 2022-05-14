@@ -32,10 +32,10 @@
                         <a class="nav-link" href="personal_account.html">Личный кабинет</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Добавить объявление</a>
+                        <a class="nav-link" href="add.html">Добавить объявление</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Поиск по объявлениям</a>
+                        <a class="nav-link" href="search.html">Поиск по объявлениям</a>
                     </li>
                 </ul>
                 <div class="d-flex">
@@ -50,6 +50,130 @@
         </div>
     </nav>
 </header>
+
+<main style="min-height: 70vh;">
+    <h2 class="title">Личный кабинет</h2>
+<div class="p-3">
+        <div class="d-flex flex-row flex-wrap m-auto p-3 w-50" style="min-width: 400px;">
+			<img src="image/аватар.jpg" class="m-auto img_card" alt="аватарка">
+			
+            <p class="titles_card">id:</p>
+            <p class="w-50" style="min-width: 250px;">326</p>
+
+            <p class="titles_card">Телефон:</p>
+            <p class="w-50" style="min-width: 250px;">+7-911-456-78-78</p>
+
+            <p class="titles_card">email:</p>
+            <p class="w-50" style="min-width: 300px;">leonid@yandex.ru</p>
+
+            <p class="titles_card">Имя:</p>
+            <p class="w-50" style="min-width: 300px;">Леонид</p>
+
+            <p class="titles_card">Дата регистрации:</p>
+            <p class="w-50" style="min-width: 300px;">26-06-2015</p>
+
+            <p class="titles_card">Количество найденных животных:</p>
+            <p class="w-50" style="min-width: 300px;">2</p>
+
+            <p class="titles_card">Количество объявлений:</p>
+            <p class="w-50" style="min-width: 300px;">4</p>
+        </div>
+		 <button type="submit" class="btn button">Редактировать профиль</button>
+</div>
+
+<!--
+    <h2 class="text-center text-white bg-primary m-2">Изменить адрес электронной почты</h2>
+    <form class="w-50 m-auto p-3" style="min-width: 300px;">
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Введите адрес электронной почты</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div  class="form-text">Мы никогда не делимся Вашими e-mail ни с кем.</div>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Отправить</button>
+    </form>
+
+    <h2 class="text-center text-white bg-primary m-2">Изменить номер телефона</h2>
+    <form class="w-50 m-auto p-3" style="min-width: 300px;">
+        <div class="mb-3">
+            <label for="phone" class="form-label">Введите номер телефона</label>
+            <input type="tel" class="form-control" id="phone" aria-describedby="emailHelp">
+            <div class="form-text">Используйте цифры, +, -.</div>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Отправить</button>
+    </form>
+-->
+    <h2 class="title">Добавленные объявления</h2>
+	<a class="btn button" href="add.html">Добавить объявление</a>
+    <div class="d-flex flex-row flex-wrap">
+        <div class="d-flex flex-row flex-wrap border m-3 p-3 position-relative card1">
+            <img src="image/pets/кошка.jpg" class="w-75" alt="рисунок животного">
+            
+			<p class="titles_card">id:</p>
+            <p class="w-50" style="min-width: 250px;">14</p>
+
+            <p class="titles_card">Вид животного:</p>
+            <p class="w-50" style="min-width: 250px;"> Кошка</p>
+
+            <p class="titles_card">Описание:</p>
+            <p class="w-50" style="min-width: 300px;">Потерялась кошка, пушистая, серая. Любит играть, ласковая.</p>
+
+            <p class="titles_card">Номер чипа:</p>
+            <p class="w-50" style="min-width: 300px;">ca-001-spb</p>
+
+            <p class="titles_card">Район:</p>
+            <p class="w-50" style="min-width: 300px;">Василиостровский</p>
+
+            <p class="titles_card">Дата:</p>
+            <p class="w-50" style="min-width: 300px;">24-03-2020</p>
+            <div class="position-absolute text-danger" style="top:15px; right: 15px; cursor: pointer;">&#10060;</div>
+            <button type="submit" class="btn button">Редактировать объявление</button>
+        </div>
+        <div class="d-flex flex-row flex-wrap border m-3 p-3 position-relative card1">
+            <img src="image/pets/коза.jpeg" class="w-75" alt="рисунок животного">
+            
+			<p class="titles_card">id:</p>
+            <p class="w-50" style="min-width: 250px;">18</p>
+
+            <p class="titles_card">Вид животного:</p>
+            <p class="w-50" style="min-width: 250px;"> Коза</p>
+
+            <p class="titles_card">Описание:</p>
+            <p class="w-50" style="min-width: 300px;">Потерялась коза, последний раз видели в здании Московского вокзала
+                г. Санкт-Петербург. Коза белая, пуховая.</p>
+
+            <p class="titles_card">Номер чипа:</p>
+            <p class="w-50" style="min-width: 300px;">go-011-spb</p>
+
+            <p class="titles_card">Район:</p>
+            <p class="w-50" style="min-width: 300px;">Центральный</p>
+
+            <p class="titles_card">Дата:</p>
+            <p class="w-50" style="min-width: 300px;">14-03-2022</p>
+            <div class="position-absolute text-danger" style="top:15px; right: 15px; cursor: pointer;">&#10060;</div>
+            <button type="submit" class="btn button">Редактировать объявление</button>
+        </div>
+    </div>
+
+    <nav aria-label="Page navigation example" class="m-3">
+        <ul class="pagination">
+            <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                </a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</main>
 
 <footer class="border-bottom">
     <p class="text-white">GET PET BACK © Copyright, 2022</p>

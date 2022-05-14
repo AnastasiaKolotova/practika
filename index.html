@@ -33,19 +33,18 @@
                         <a class="nav-link" href="personal_account.html">Личный кабинет</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Добавить объявление</a>
+                        <a class="nav-link" href="add.html">Добавить объявление</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Поиск по объявлениям</a>
+                        <a class="nav-link" href="search.html">Поиск по объявлениям</a>
                     </li>
                 </ul>
                 <div class="d-flex">
-                    <button class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#signinModal">Войти</button>
-                    <button class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#signupModal">Регистрация</button>
+                    <button class="btn button" data-bs-toggle="modal" data-bs-target="#signinModal">Войти</button>
                 </div>
                 <form class="d-flex">
                     <input class="form-control me-2" type="search" placeholder="Поиск на сайте..." aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Поиск</button>
+                    <button class="btn btn-outline-success button" type="submit">Поиск</button>
                 </form>
             </div>
         </div>
@@ -73,51 +72,22 @@
                         <input type="checkbox" id="gridCheck" class="form-check-input">
                         <label for="gridCheck" class="form-check-label">Сохранить пароль</label>
                     </div>
+                    <p class="form-label">Нет аккаунта? Тогда <a href="#">зарегистрируйтесь</a></p>
                 </form>
             </div>
+
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Вернуться</button>
-                <button type="button" class="btn btn-success">Войти</button>
+                <button type="button" class="btn button">Войти</button>
             </div>
         </div>
     </div>
 </div>
 
-<!-- Modal window 2
-<div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Регистрация</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <form>
-                    <div class="mb-3">
-                        <label for="exampleInputEmail2" class="form-label">Адрес электронной почты</label>
-                        <input type="email" class="form-control" id="exampleInputEmail2" aria-describedby="emailHelp">
-                        <div id="emailHelp" class="form-text">Мы никогда не распространяем Ваши e-mail другим людям.</div>
-                    </div>
-                    <div class="mb-3">
-                        <label for="exampleInputPassword1" class="form-label">Пароль</label>
-                        <input type="password" class="form-control" id="exampleInputPassword2">
-                        <input type="checkbox" id="gridCheck" class="form-check-input">
-                        <label for="gridCheck" class="form-check-label">Сохранить пароль</label>
-                    </div>
-                </form>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Вернуться</button>
-                <button type="button" class="btn btn-primary">Войти</button>
-            </div>
-        </div>
-    </div>
-</div>-->
-
 <main style="min-height: 70vh;">
 
-<!-- Slider -->
-    <h2 class="text-center my-2 title">Найденные животные</h2>
+    <!-- Slider -->
+    <h2 class="title">Найденные животные</h2>
     <div id="carouselExampleIndicators" class="carousel slide slider m-auto" data-bs-ride="carousel">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -151,10 +121,10 @@
         </button>
     </div>
 
-<!-- Cards -->
-    <h2 class="text-center title my-2">Карточки найденных животных</h2>
-    <div class="cards d-flex  flex-wrap justify-content-around">
-        <div class="card1">
+    <!-- Cards -->
+    <h2 class="title">Карточки найденных животных</h2>
+    <div class="cards d-flex flex-wrap justify-content-around">
+        <div class="position-relative card1">
             <img src="image/pets/кошка.jpg" class="img_card" alt="рисунок животного">
             <div>
                 <p class="titles_card">id:</p>
@@ -177,7 +147,7 @@
                 <p class="w-50" style="min-width: 300px;">24-03-2020</p>
             </div>
         </div>
-        <div class="card1">
+        <div class="position-relative card1">
             <img src="image/pets/коза.jpeg" class="img_card" alt="рисунок животного">
             <div>
                 <p class="titles_card">id:</p>
@@ -203,13 +173,13 @@
     </div>
 
     <!-- News -->
-    <h2 class="text-center title my-2">Подписка на новости</h2>
+    <h2 class="title">Подписка на новости</h2>
     <div>
         <form class="w-50 m-auto p-3" style="min-width: 300px;">
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Для получения новостей введите адрес электронной почты</label>
                 <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                <div id="emailHelp" class="form-text">Мы никогда не делимся Вашими e-mail ни с кем.</div>
+                <div id="emailHelp" class="form-text">Мы никогда не распространяем Ваши e-mail другим людям.</div>
             </div>
 
             <button type="submit" class="btn button">Подписаться</button>
