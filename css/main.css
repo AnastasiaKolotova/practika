@@ -13,7 +13,7 @@ header {
 
 body {
     background-color: #f2f2f2;
-    /*font-family: "Arial";*/
+    font-family: sans-serif;
     font-size: 16px;
     color: black;
 
@@ -26,8 +26,10 @@ body {
     margin: 0 auto;
 }
 
-h1, h2 {
+h2 {
     color: #add430;
+    font-style: italic;
+    text-align: center;
 }
 
 p {
@@ -47,6 +49,7 @@ hr {
 footer {
     background: #bb906a;
     text-align: center;
+    padding-top: 30px;
 }
 
 .navbar {
@@ -60,12 +63,15 @@ footer {
     background-color: white;
     padding: 10px;
     width: 70%;
+    margin-left: 15%;
+    margin-top: 20px;
+    margin-bottom: 20px;
     border-radius: 5px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .cards {
-
+    padding: 10px;
     /* 1 version
     display: flex;
     flex-wrap: wrap;
@@ -89,12 +95,14 @@ footer {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     border-radius: 5px;
     min-width: 300px;
-	max-width: 600px;
-    width: 20%;
-    margin: auto;
+    width: 30%;
     padding: 10px;
     text-align: left;
     font-family: sans-serif;
+
+    margin-bottom: 10px;
+    margin-right: 10px;
+
 
 }
 
@@ -164,5 +172,6 @@ img {
     color: #f2f2f2;
     padding: 10px;
 	text-align: center;
+    font-weight: bold;
 }
 

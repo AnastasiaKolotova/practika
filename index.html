@@ -19,7 +19,7 @@
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html"><img src="image/logo.png" class="w-50" alt="logo"></a>
-            <a class="navbar-brand" href="index.html"><b class="logo">GET <b class="logo2">PET</b> BACK</b></a>
+            <!--<a class="navbar-brand" href="index.html"><b class="logo">GET <b class="logo2">PET</b> BACK</b></a>-->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -72,7 +72,7 @@
                         <input type="checkbox" id="gridCheck" class="form-check-input">
                         <label for="gridCheck" class="form-check-label">Сохранить пароль</label>
                     </div>
-                    <p class="form-label">Нет аккаунта? Тогда <a href="#">зарегистрируйтесь</a></p>
+                    <p class="form-label">Нет аккаунта? Тогда <a href="signup.html">зарегистрируйтесь</a></p>
                 </form>
             </div>
 
@@ -87,8 +87,8 @@
 <main style="min-height: 70vh;">
 
     <!-- Slider -->
-    <h2 class="title">Найденные животные</h2>
-    <div id="carouselExampleIndicators" class="carousel slide slider m-auto" data-bs-ride="carousel">
+    <h1 class="title">Найденные животные</h1>
+    <div id="carouselExampleIndicators" class="carousel slide slider" data-bs-ride="carousel">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -97,17 +97,17 @@
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <img src="image/pets/собака.png" class="d-block w-100" alt="Собака">
-                <h2 class="text-center">Найден хозяин собаки</h2>
+                <h2>Найден хозяин собаки</h2>
                 <p>Собака рыжая была найдена в Красногвардейском районе.</p>
             </div>
             <div class="carousel-item">
                 <img src="image/pets/мышь.png" class="d-block w-100" alt="Мышь">
-                <h2 class="text-center">Найден хозяин мыши</h2>
+                <h2>Найден хозяин мыши</h2>
                 <p>Мышь коричневая была найдена в Центральном районе.</p>
             </div>
             <div class="carousel-item">
                 <img src="image/pets/горилла.jpg" class="d-block w-100" alt="Горилла">
-                <h2 class="text-center">Найден хозяин гориллы</h2>
+                <h2>Найден хозяин гориллы</h2>
                 <p>Горилла была найдена в Красногвардейском районе.</p>
             </div>
         </div>
@@ -122,58 +122,85 @@
     </div>
 
     <!-- Cards -->
-    <h2 class="title">Карточки найденных животных</h2>
+    <h1 class="title">Карточки найденных животных</h1>
     <div class="cards d-flex flex-wrap justify-content-around">
         <div class="position-relative card1">
             <img src="image/pets/кошка.jpg" class="img_card" alt="рисунок животного">
             <div>
                 <p class="titles_card">id:</p>
-                <p class="w-50" style="min-width: 250px;">13</p>
+                <p>13</p>
 
                 <p class="titles_card">Вид животного:</p>
-                <p class="w-50" style="min-width: 250px;">Кошка</p>
+                <p>Кошка</p>
 
                 <p class="titles_card">Описание:</p>
-                <p class="w-50" style="min-width: 300px;">Потерялась кошка, пушистая, серая.
+                <p>Потерялась кошка, пушистая, серая.
                     Любит играть, ласковая.</p>
 
                 <p class="titles_card">Номер чипа:</p>
-                <p class="w-50" style="min-width: 300px;">ca-001-spb</p>
+                <p>ca-001-spb</p>
 
                 <p class="titles_card">Район:</p>
-                <p class="w-50" style="min-width: 300px;">Василеостровский</p>
+                <p>Василеостровский</p>
 
                 <p class="titles_card">Дата:</p>
-                <p class="w-50" style="min-width: 300px;">24-03-2020</p>
+                <p>24-03-2020</p>
             </div>
+            <button type="submit" class="btn button">Отозваться</button>
         </div>
         <div class="position-relative card1">
             <img src="image/pets/коза.jpeg" class="img_card" alt="рисунок животного">
             <div>
                 <p class="titles_card">id:</p>
-                <p class="w-50" style="min-width: 250px;">18</p>
+                <p>18</p>
 
                 <p class="titles_card">Вид животного:</p>
-                <p class="w-50" style="min-width: 250px;">Коза</p>
+                <p>Коза</p>
 
                 <p class="titles_card">Описание:</p>
-                <p class="w-50" style="min-width: 300px;">Потерялась коза. Последний раз видели в здании
+                <p>Потерялась коза. Последний раз видели в здании
                     Московского вокзала г. Санкт-Петербург. Коза белая, пуховая.</p>
 
                 <p class="titles_card">Номер чипа:</p>
-                <p class="w-50" style="min-width: 300px;">go-011-spb</p>
+                <p>go-011-spb</p>
 
                 <p class="titles_card">Район:</p>
-                <p class="w-50" style="min-width: 300px;">Центральный</p>
+                <p>Центральный</p>
 
                 <p class="titles_card">Дата:</p>
-                <p class="w-50" style="min-width: 300px;">14-03-2022</p>
+                <p>14-03-2022</p>
             </div>
+            <button type="submit" class="btn button">Отозваться</button>
         </div>
+        <div class="position-relative card1">
+            <img src="image/pets/пес.jpg" class="img_card" alt="рисунок животного">
+            <div>
+                <p class="titles_card">id:</p>
+                <p>22</p>
+
+                <p class="titles_card">Вид животного:</p>
+                <p>Пёс</p>
+
+                <p class="titles_card">Описание:</p>
+                <p >Потерялся пес около станции метро Спортивная.
+                    Порода - немецкая овчарка. На шее ошейник с надписью "Мухтар".</p>
+
+                <p class="titles_card">Номер чипа:</p>
+                <p>xe-131-spb</p>
+
+                <p class="titles_card">Район:</p>
+                <p>Петроградский</p>
+
+                <p class="titles_card">Дата:</p>
+                <p>29-03-2022</p>
+            </div>
+            <button type="submit" class="btn button">Отозваться</button>
+        </div>
+    </div>
     </div>
 
     <!-- News -->
-    <h2 class="title">Подписка на новости</h2>
+    <h1 class="title">Подписка на новости</h1>
     <div>
         <form class="w-50 m-auto p-3" style="min-width: 300px;">
             <div class="mb-3">
