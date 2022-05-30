@@ -39,20 +39,52 @@
                     </li>
                 </ul>
                 <div class="d-flex">
-                    <button class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#signinModal">Войти</button>
-                    <button class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#signupModal">Регистрация</button>
+                    <button class="btn button" data-bs-toggle="modal" data-bs-target="#signinModal">Войти</button>
                 </div>
                 <form class="d-flex">
                     <input class="form-control me-2" type="search" placeholder="Поиск на сайте..." aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Поиск</button>
+                    <button class="btn btn-outline-success button" type="submit">Поиск</button>
                 </form>
             </div>
         </div>
     </nav>
 </header>
 
+<!-- Modal window 1 -->
+<div class="modal fade" id="signinModal" tabindex="-1" aria-labelledby="signinModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="signinModalLabel">Вход</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Адрес электронной почты</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">Мы никогда не распространяем Ваши e-mail другим людям.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Пароль</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
+                        <input type="checkbox" id="gridCheck" class="form-check-input">
+                        <label for="gridCheck" class="form-check-label">Сохранить пароль</label>
+                    </div>
+                    <p class="form-label">Нет аккаунта? Тогда <a href="signup.html">зарегистрируйтесь</a></p>
+                </form>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Вернуться</button>
+                <button type="button" class="btn button">Войти</button>
+            </div>
+        </div>
+    </div>
+</div>
+
 <main style="min-height: 70vh;">
-    <h2 class="title">Личный кабинет</h2>
+    <h1 class="title">Личный кабинет</h1>
 <div class="p-3">
         <div class="d-flex flex-row flex-wrap m-auto p-3 w-50" style="min-width: 400px;">
 			<img src="image/аватар.jpg" class="m-auto img_card" alt="аватарка">
@@ -78,33 +110,10 @@
             <p class="titles_card">Количество объявлений:</p>
             <p class="w-50" style="min-width: 250px;">4</p>
         </div>
-		 <button type="submit" class="btn button">Редактировать профиль</button>
+		 <a class="btn button" href="editprofile.html">Редактировать профиль</a>
 </div>
 
-<!--
-    <h2 class="text-center text-white bg-primary m-2">Изменить адрес электронной почты</h2>
-    <form class="w-50 m-auto p-3" style="min-width: 300px;">
-        <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Введите адрес электронной почты</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-            <div  class="form-text">Мы никогда не делимся Вашими e-mail ни с кем.</div>
-        </div>
-
-        <button type="submit" class="btn btn-primary">Отправить</button>
-    </form>
-
-    <h2 class="text-center text-white bg-primary m-2">Изменить номер телефона</h2>
-    <form class="w-50 m-auto p-3" style="min-width: 300px;">
-        <div class="mb-3">
-            <label for="phone" class="form-label">Введите номер телефона</label>
-            <input type="tel" class="form-control" id="phone" aria-describedby="emailHelp">
-            <div class="form-text">Используйте цифры, +, -.</div>
-        </div>
-
-        <button type="submit" class="btn btn-primary">Отправить</button>
-    </form>
--->
-    <h2 class="title">Добавленные объявления</h2>
+    <h1 class="title">Добавленные объявления</h1>
 	<a class="btn button" href="add.html">Добавить объявление</a>
     <div class="d-flex flex-row flex-wrap">
         <div class="d-flex flex-row flex-wrap border m-3 p-3 position-relative card1">
